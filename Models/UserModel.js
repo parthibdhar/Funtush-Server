@@ -5,7 +5,7 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: [true, "Please add a full name"]
     },
-    emai: {
+    email: {
         type: String,
         required: [true, "Please add an email"],
         unique: true,
