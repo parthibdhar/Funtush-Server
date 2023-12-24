@@ -6,6 +6,7 @@ import {connectDb} from "./config/dbConnection.js";
 import userRouter from "./Routes/UserRoutes.js";
 import { errorHandler } from "./middleWares/errorMidddleWare.js";
 import movieRouter from "./Routes/MoviesRoutes.js";
+import categoryRouter from "./Routes/CategoriesRoutes.js";
 dotenv.config();
 
 const app = express();
@@ -24,6 +25,7 @@ app.get("/", (req, res) => {
 // Other Routes
 app.use("/api/user", userRouter);
 app.use("/api/movies", movieRouter);
+app.use("/api/categories", categoryRouter);
 
 // ERROR HANDLING MIDDLEWARES
 app.use(errorHandler);
