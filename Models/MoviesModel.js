@@ -61,7 +61,7 @@ const reviewsSchema = mongoose.Schema({
         // required:true
     },
     rate:{
-        Type:Number,
+        type:Number,
         required:true,
         default:0
     },

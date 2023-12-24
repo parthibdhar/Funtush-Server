@@ -5,6 +5,7 @@ import colors from "colors";
 import {connectDb} from "./config/dbConnection.js";
 import userRouter from "./Routes/UserRoutes.js";
 import { errorHandler } from "./middleWares/errorMidddleWare.js";
+import movieRouter from "./Routes/MoviesRoutes.js";
 dotenv.config();
 
 const app = express();
@@ -22,6 +23,7 @@ app.get("/", (req, res) => {
 
 // Other Routes
 app.use("/api/user", userRouter);
+app.use("/api/movies", movieRouter);
 
 // ERROR HANDLING MIDDLEWARES
 app.use(errorHandler);

@@ -1,4 +1,4 @@
-export const Movies = [
+export const MoviesData = [
   {
     name: "Army of The Dead",
     desc: "Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod There",

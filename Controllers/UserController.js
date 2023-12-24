@@ -326,7 +326,7 @@ export const deleteAllFavoriteMoviesController = asyncHandler(async (req, res) =
             const result = await user.save();
             res.status(200).send({
                 success: true,
-                message: "All movies deleted successfully",
+                message: "All your favourite movies deleted successfully",
                 result
             })
         }
